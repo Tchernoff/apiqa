@@ -1,5 +1,4 @@
 @import "fonts.css";
-@import "_variables.scss";
 @import "_typography.scss";
 @import "_parallax.scss";
 
@@ -14,7 +13,7 @@ html {
 }
 
 body {
-  background-color: $greyblue;
+  background-color: #2f415f;
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
