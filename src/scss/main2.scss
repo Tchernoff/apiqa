@@ -1,0 +1,392 @@
+// @import "~normalize.css";
+@import "fonts.css";
+@import "_variables.scss";
+@import "_typography.scss";
+@import "_parallax.scss";
+
+body {
+  font-family: Geometria;
+  background-color: $greyblue;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media screen and (min-width: 475px) {
+    padding: 0 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 60px;
+  }
+}
+
+/* HELPERS
+============================================= */
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+    
+    &_hrzn-center {
+      align-items: center;
+    }
+}
+
+.mobile {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display:none;
+  }
+}
+
+.tablet {
+  display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.avatar__image {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 375px) {
+    width: 98px;
+    height: 98px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.decoration-img {
+  position: absolute;
+  z-index: 1;
+}
+
+.header {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    @media screen and (min-width: 768px) {
+      height: auto;
+      justify-content: normal;
+      align-items: normal;
+      padding: 20px 0;
+    }
+  }
+
+  &__logo {
+    z-index: 1;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: 40px;
+      a + a {
+        margin-left: 20px;
+      }
+    }
+    
+  }
+
+  &__menu-button {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.content {
+
+  &__inner {
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__explanation {
+    margin-top: 5px;
+  }
+
+  &__bullets {
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__bullet {
+    margin-bottom: 40px;
+    
+    @media screen and (min-width: 768px) {
+      max-width: 48%;  
+    }
+  }
+
+  &__link {
+    display: block;
+    
+    &_center {
+      text-align: center;
+    }
+
+    & + .content__link {
+
+      @media screen and (min-width: 768px) {
+        margin-top: 40px;  
+      }
+    }
+  }
+
+  &__contacts {
+
+    @media screen and (min-width: 768px) {
+      & > * {
+        margin: 40px 0;
+      }  
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+  
+  &__accent {
+    margin: 0;
+    max-width: 80%;
+  }
+
+  &__news-pages {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      @media screen and (min-width: 414px) {
+        padding: 0 10px
+      }
+    }
+  }
+
+  &__products {
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 60px -30px 0 -30px;
+    }
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+
+    & + .content__product {
+      margin-top: 60px;
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
+    }
+
+    .link {
+      text-align: center;
+    }
+  }
+
+  &__image-link {
+    display: block;
+    margin: 0 20px 40px 0;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 20px 50px 0;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    margin: 40px 0;
+  }
+
+  &__product-img {
+    width: 100%;
+
+    &_center {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &_right {
+      float: right;
+    }
+  }
+
+  .container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 40px;
+
+    &_intro {
+      padding-top: 40px;
+    }
+  }
+}
+
+.accent {
+
+  &_sm {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.footer {
+  background-color: $darkblue;
+  padding: 15px 0;
+
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+  }
+}
+
+.button {
+  display: flex;
+  position: sticky;
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin: 0 auto;
+  border: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: $lightgreyblue;
+
+  &__arrow-up {
+    margin: 10px 0 0 10px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-bottom: transparent;
+    border-right: transparent;
+    transform: rotate(45deg);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  overflow: hidden;
+  background: rgba(2, 7, 22, 0.8);
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  align-items: flex-end;
+  justify-content: center;
+
+  &_open {
+    display: flex;
+  }
+
+  &__menu {
+    padding: 20px 0;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: $lightgreyblue;
+  }
+}

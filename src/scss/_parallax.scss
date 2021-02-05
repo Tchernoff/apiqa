@@ -1,0 +1,151 @@
+.explosion {
+  right: 0;
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
+}
+  
+.bomb {
+  right: 0;
+  top: 210px;
+
+  @media screen and (min-width: 640px) {
+    top: 250px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 340px;
+    top: 410px;
+  }
+}
+
+.hammer {
+  top: 10px;
+  right: -60px;
+
+  @media screen and (min-width: 475px) {
+    right: 0;
+  }
+
+  @media screen and (min-width: 640px) {
+    top: 100px;
+  }
+
+  @media screen and (min-width: 940px) {
+    top: 250px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.rockit {
+  top: 250px;
+  right: -120px;
+
+  @media screen and (min-width: 414px) {
+    right: -80px;
+  }
+
+  @media screen and (min-width: 540px) {
+    right: -40px;
+  }
+
+  @media screen and (min-width: 640px) {
+    top: 450px;
+    right: -70px;
+  }
+  @media screen and (min-width: 940px) {
+    top: 590px;
+    right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.typewriter {
+  left: 150px;
+  top: 620px;
+
+  @media screen and (min-width: 414px) {
+    right: -40px;
+    left: auto;
+  }
+
+  @media screen and (min-width: 640px) {
+    right: 0;
+    top: 920px;
+  }
+
+  @media screen and (min-width: 940px) {
+    top: 890px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 930px;
+  }
+}
+
+.girl {
+  height: 200px;
+  top: 65px;
+  left: 135px;
+  z-index: 2 !important;
+
+  @media screen and (min-width: 640px) {
+    height: 330px;
+    top: 92px;
+    left: 227px;
+  }
+
+  @media screen and (min-width: 940px) {
+    height: 430px;
+    top: 78px;
+    left: 267px;
+  }
+}
+
+.swing {
+  top: 199px;
+  left: 171px;
+  z-index: 1;
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: top;
+
+  @media screen and (min-width: 640px) {
+    top: 313px;
+    left: 278px;
+  }
+
+  @media screen and (min-width: 940px) {
+    top: 361px;
+    left: 331px;
+  }
+
+  img {
+    height: 65px;
+    animation: scale ease-in-out 1s infinite alternate;
+
+    @media screen and (min-width: 640px) {
+      height: 120px;
+    }
+
+    @media screen and (min-width: 940px) {
+      height: 160px;
+    }
+  }
+}
+
+@keyframes swing {
+  0% { transform: rotate(-18deg); }
+  100% { transform: rotate(-37deg); }
+}
+
+@keyframes scale {
+  0% { transform: scale(1.0); }
+  100% { transform: scale(1.03); }
+}

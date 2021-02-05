@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+  <title>Document</title>
+</head>
+
+<body>
+  <picture>
+    <source media="(min-width: 640px)" srcset="images/explosion2.png">
+    <source media="(min-width: 1200px)" srcset="images/explosion3.png">
+    <img id="explosion" class="parallax-img explosion" src="images/explosion.png" alt="explosion">
+  </picture>
+  <picture>
+    <source media="(min-width: 640px)" srcset="images/bomb2.png">
+    <source media="(min-width: 1200px)" srcset="images/bomb3.png">
+    <img id="bomb" class="parallax-img bomb" src="images/bomb.png" alt="bomb">
+  </picture>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__content">
+        <a class="header__logo" href="#">
+          <img src="images/apiqa.svg" alt="логотип апика">
+        </a>
+        <nav class="header__nav navigation">
+          <a class="navigation__link" href="#team">Команда</a>
+          <a class="navigation__link" href="#products">Работы</a>
+          <a class="navigation__link" href="#press">Пресса</a>
+          <a class="navigation__link" href="#vacancies">Вакансии</a>
+          <a class="navigation__link" href="#contact">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="section section--first intro-section">
+      <section class="section__content">
+        <h1 class="section__title">Взрываем<br> отрасль ЖКХ<br> нашим софтом</h1>
+        <div class="section__inner">
+          <p class="section__accent section__accent--md">Наша миссия — сделать ЖКХ в России офигенным</p>
+          <p class="section__description">Мы в курсе, как устроены управляющие компании изнутри, а еще мы сами — жители,
+            и
+            страдаем от плохого сервиса и отстойных приложений.</p>
+        </div>
+      </section>
+    </div>
+    <div id="team" class="section team-section">
+      <picture>
+        <source media="(min-width: 640px)" srcset="images/hammer2.png">
+        <source media="(min-width: 1200px)" srcset="images/hammer4.png">
+        <img id="hammer" class="parallax-img hammer" src="images/hammer.png" alt="hammer">
+      </picture>
+      <section class="section__content">
+        <h1 class="section__title">Херачим</h1>
+        <div class="section__inner section__inner--no-maxwidth">
+          <p class="section__description">Мы работаем небольшими командами. Над каждым проектом трудится группа из
+            крутых ребят, на которых можно положиться.</p>
+          <div class="section__flex team-section__facts">
+            <div class="team-section__facts-item">
+              <span class="section__accent section__accent--lg">56</span>
+              <span class="section__accent section__accent--md">человек</span>
+              <p class="section__description section__description--sm">Поэтому мы херачим и растём на задачах,
+                вкладываемся в продукт и отвечаем
+                за
+                результат своего труда.</p>
+            </div>
+            <div class="team-section__facts-item">
+              <span class="section__accent section__accent--lg">26</span>
+              <span class="section__accent section__accent--md">лет</span>
+              <p class="section__description section__description--sm">Средний возраст наших разработчиков</p>
+            </div>
+          </div>
+          <div class="section__flex team-section__list">
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+            <div class="team-section__avatar"></div>
+          </div>
+          <button class="section__link-button team-section__button">Посмотреть всех</button>
+        </div>
+      </section>
+    </div>
+    <div id="products" class="section products-section">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/rockit3.png">
+        <source media="(min-width: 640px)" srcset="images/rockit2.png">
+        <img id="rockit" class="parallax-img rockit" src="images/rockit.png" alt="rockit">
+      </picture>
+      <section class="section__content">
+        <h1 class="section__title">Мы делаем<br> круто</h1>
+        <div class="section__inner section__inner--no-maxwidth">
+          <p class="section__description">Наши продукты выстреливают и меняют привычные шаблоны взаимодействия с УК.</p>
+          <div class="section__flex products-section__facts">
+            <div class="products-section__facts-item">
+              <span class="section__accent section__accent--lg">208 000</span>
+              <p class="section__description section__description--sm">жителей пользуются нашим приложением личного
+                кабинета</p>
+            </div>
+            <div class="products-section__facts-item">
+              <span class="section__accent section__accent--lg">206</span>
+              <p class="section__description section__description--sm">управляющих компаний ежедневно работают с
+                проектом «Диспетчерская» по всей
+                России.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section__flex products-section__apps">
+        <div class="products-section__apps-item">
+          <img class="products-section__img" src="images/work1_mobile.png" alt="ноутбук">
+          <a class="section__link section__link--sm products-section__link" href="#">Личный кабинет ПИК-Комфорт</a>
+        </div>
+        <div class="products-section__apps-item">
+          <img class="products-section__img products-section__img--vertical" src="images/work2_mobile.png"
+            alt="телефон">
+          <a class="section__link section__link--sm products-section__link" href="#">Приложение ПИК-Комфорт</a>
+        </div>
+        <div class="products-section__apps-item">
+          <img class="products-section__img" src="images/work3_mobile.png" alt="ноутбук">
+          <a class="section__link section__link--sm products-section__link" href="#">Лига ЖКХ</a>
+        </div>
+      </div>
+    </div>
+    <div id="press" class="section press-section">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/typewriter3.png">
+        <source media="(min-width: 640px)" srcset="images/typewriter2.png">
+        <img id="typewriter" class="parallax-img typewriter" src="images/typewriter.png" alt="typewriter">
+      </picture>
+      <section class="section__content">
+        <h1 class="section__title">О нас пишут</h1>
+        <div class="section__inner">
+          <div class="section__flex press-section__media">
+            <a class="section__image-link press-section__media-item" href="#">
+              <img class="press-section__image" src="images/meduza.svg" alt="медуза">
+            </a>
+            <a class="section__image-link press-section__media-item" href="#">
+              <img class="press-section__image" src="images/vc.svg" alt="vc.ru">
+            </a>
+            <a class="section__image-link press-section__media-item" href="#">
+              <img class="press-section__image" src="images/sekret.svg" alt="секрет фирмы">
+            </a>
+            <a class="section__image-link press-section__media-item" href="#">
+              <img class="press-section__image" src="images/lebedev.svg" alt="арт лебедев">
+            </a>
+            <a class="section__image-link press-section__media-item" href="#">
+              <img class="press-section__image" src="images/delkvar.svg" alt="деловой квартал">
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="vacancies" class="section vacancies-section">
+      <img id="girl" class="parallax-img girl" src="images/girl.png" alt="girl">
+      <figure class="parallax-img swing scale">
+        <img id="leg" src="images/leg.png" alt="leg">
+      </figure>  
+      <section class="section__content">
+        <h1 class="section__title">Вакансии</h1>
+        <div class="section__inner">
+          <a class="section__link section__link--lg vacancies-section__link" href="#">Senior Python developer</a>
+          <a class="section__link section__link--lg vacancies-section__link" href="#">Team lead, front-end</a>
+          <a class="section__link section__link--lg vacancies-section__link" href="#">Ведущий .NET-разработчик</a>
+          <a class="section__link section__link--lg vacancies-section__link" href="#">Middle Python developer</a>
+          <a class="section__link section__link--lg vacancies-section__link" href="#">Программист 1С Middle</a>
+        </div>
+      </section>
+    </div>
+    <div id="contact" class="section contact-section">
+      <section class="section__content">
+        <h1 class="section__title">Контакты</h1>
+        <div class="section__inner">
+          <p class="section__description">Екатеринбург, ул. Тургенева, 18</p>
+          <a class="section__link section__link--md contact-section__link" href="#">+7 (343) 383-28-35</a>
+          <a class="section__link section__link--md contact-section__link" href="#">hr@apiqa.io</a>
+          <div class="contact-section__social">
+            <a class="section__image-link contact-section__image-link" href="#">
+              <img src="images/facebook.png" alt="facebook">
+            </a>
+            <a class="section__image-link contact-section__image-link" href="#">
+              <img src="images/vk.png" alt="vkontakte">
+            </a>
+            <a class="section__image-link contact-section__image-link" href="#">
+              <img src="images/instagram.png" alt="instagram">
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__content">
+        <a class="footer__logo" href="#">
+          <img src="images/apiqa.svg" alt="логотип апика">
+        </a>
+        <nav class="footer__nav navigation">
+          <a class="navigation__link navigation__link--footer" href="#team">Команда</a>
+          <a class="navigation__link navigation__link--footer" href="#products">Работы</a>
+          <a class="navigation__link navigation__link--footer" href="#press">Пресса</a>
+          <a class="navigation__link navigation__link--footer" href="#vacancies">Вакансии</a>
+          <a class="navigation__link navigation__link--footer" href="#contact">Контакты</a>
+        </nav>
+        <div class="footer__adress">
+          <p class="footer__adress-item">Екатеринбург, ул. Тургенева, 18</p>
+          <p class="footer__adress-item">+7 (343) 383-28-35</p>
+          <p class="footer__adress-item"><a class="section__link" href="#">ahr@apiqa.io</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div style="width: 100%; display: flex; justify-content: center; position: fixed; bottom: 0">
+    <button id="button" class="modal-button">
+      <div class="modal-button__arrow-up"></div>
+    </button>
+  </div>
+  <div id="modal" class="modal">
+    <div id="modalMenu" class="modal__menu">
+      <a class="section__link section__link--lg modal__menu-item" href="#team">Команда</a>
+      <a class="section__link section__link--lg modal__menu-item" href="#products">Работа</a>
+      <a class="section__link section__link--lg modal__menu-item" href="#press">Пресса</a>
+      <a class="section__link section__link--lg modal__menu-item" href="#vacancies">Вакансия</a>
+      <a class="section__link section__link--lg modal__menu-item" href="#contact">Контакты</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
